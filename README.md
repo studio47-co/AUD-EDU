@@ -1,31 +1,31 @@
-# AUDMANI Education — primeira versão (demonstrativa)
+# AUDMANI Education — Versão estática de apresentação
 
-Projeto independente (HTML + CSS + JavaScript puros, sem dependências, sem build). Identidade visual copiada do AVA; o AVA original não foi alterado.
+Demonstração frontend (React + TypeScript + Vite) da AUDMANI Education V3. **Todos os dados são fictícios** e nada sai do navegador: não há servidor, login, pagamento nem banco de dados.
 
-## Como abrir
-- Abra `index.html` no navegador (funciona por `file://`) ou sirva a pasta por HTTP: `python3 -m http.server 8000`.
-- Rotas por hash: `#/inicio #/catalogo #/curso/<slug> #/formacao/frontend #/biblioteca #/painel #/aprender/<curso>[/<aula>] #/atividades #/simulados #/projetos #/certificados #/metodologia #/conta`.
+## Executar
+```bash
+npm install
+npm run dev        # desenvolvimento (http://localhost:5173)
+npm run build      # gera a versão estática em dist/
+npm run preview    # serve dist/ em http://localhost:4173
+```
+O build usa `base: "./"` e rotas por hash (`#/rota`), então `dist/` funciona em qualquer hospedagem estática.
+
+## Páginas
+- **Públicas:** `#/inicio`, `#/catalogo` (filtros de busca, categoria e nível), `#/curso/html`, `#/formacao/frontend`, `#/metodologia`, `#/como-funciona`, `#/verificar` (código de exemplo: DEMO-0000).
+- **Aluno (Alex Martins):** `#/painel`, `#/biblioteca`, `#/aprender/html` (23 aulas navegáveis), `#/atividades`, `#/simulados`, `#/projetos`, `#/certificados`, `#/notas`, `#/conta`, `#/configuracoes`.
+- **AUDMANI Control (demonstração):** `#/control/geral`, `usuarios`, `matriculas`, `cursos`, `conteudos`, `avaliacoes`, `projetos`, `certificados`, `monitoramento`, `auditoria`, `configuracoes`.
 
 ## Estrutura
-- `css/` tokens do AVA (`ava-core.css`, cópia literal), fontes e estilos do Education.
-- `js/core/` util, store (localStorage, chave `audmani-education-v1`), router.
-- `js/data/` catálogo de cursos e preços (demonstrativo).
-- `js/components/` código, UI, leitor de aula, questões.
-- `js/pages/` páginas públicas, área do aluno, leitor, avaliações, projetos/certificados, conta/checkout.
-- `js/content/<curso>/modulo-N.js` aulas; `js/activities/<curso>.js` questões; `js/projects/projetos.js` projetos.
+```
+src/
+  App.tsx, main.tsx, lib.ts      layouts, roteamento por hash e estado local
+  components/                    UI, Code (bloco de código), Quiz, Modal
+  pages/                         páginas públicas e do aluno
+  control/                       AUDMANI Control e seus dados fictícios
+  data/                          catálogo, aulas HTML5, questões, dados do aluno
+  styles/                        CSS da identidade visual + complementos da demo
+```
 
-## PWA (instalável e offline)
-- Arquivos: `manifest.webmanifest`, `sw.js`, `offline.html`, `icons/` (192, 512, maskable, Apple Touch, favicon), `js/pwa/pwa.js`.
-- **Depois de qualquer alteração nos arquivos do app, rode `node tools/gerar-sw.js`** (gera a versão por hash e a lista de pré-cache; `--check` confere). Sem isso, os alunos continuam com a versão antiga em cache.
-- Ícones: `python3 tools/gerar-icones.py` (ferramenta de desenvolvimento; precisa de pillow, fonttools e brotli).
-- Exige HTTPS ou `localhost` (ex.: `python3 -m http.server 8000`). Em `file://` o app funciona como site, mas sem Service Worker nem instalação.
-- Hospedagem: sirva `sw.js` sem cache longo de HTTP (ou com revalidação) para que as atualizações sejam detectadas rápido.
-- Offline: todo o app (HTML, CSS, JS, fontes, ícones **e o conteúdo dos cursos, que é código estático público do próprio app**) é pré-armazenado. Respostas, progresso e tema ficam no `localStorage`, nunca no cache do Service Worker. Quando houver conteúdo privado ou pago, o cache dele deve ser uma etapa própria, com autorização e controle de armazenamento.
-- Sem notificações push.
-
-## Limites conhecidos (leia antes de usar)
-- **Tudo é demonstrativo e local.** Matrícula, cupom, compra, parceria escolar e progresso ficam no `localStorage` e podem ser editados pelo usuário. Não há pagamento real, nem dados de cartão, nem verificação de matrícula escolar.
-- **Nenhum certificado é emitido.** A área só mostra elegibilidade; certificado verificável exige servidor.
-- Os links de referências (MDN, W3C, WCAG etc.) não foram verificados automaticamente (o ambiente de desenvolvimento não acessa sites externos). Confira antes de publicar.
-- As cargas horárias (30 h/40 h/60 h) são **propostas** de carga total (leitura + exercícios + atividades + projeto). O tempo de leitura das aulas produzidas é menor (ver relatório).
-- Exemplos de rede (`fetch`) usam a API pública JSONPlaceholder e não foram executados contra a rede real.
+## Origem visual
+Os arquivos `ava-core.css`, `education.css` e `control.css` e as fontes Inter foram copiados da cópia local do V3 para manter a identidade visual. Nenhum arquivo da plataforma original foi alterado. Nenhum dado de usuário, e-mail, log ou banco foi copiado; o catálogo usa apenas textos e valores de referência públicos dos cursos.

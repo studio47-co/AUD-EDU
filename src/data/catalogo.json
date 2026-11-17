@@ -1,0 +1,957 @@
+{
+ "cursos": [
+  {
+   "slug": "html",
+   "nome": "HTML5",
+   "categoria": "Desenvolvimento Web",
+   "nivel": "Iniciante",
+   "horas": 30,
+   "preco": 89.9,
+   "resumo": "A estrutura de toda página web: semântica, formulários e acessibilidade.",
+   "descricao": "Do funcionamento da Web à construção de páginas semânticas, com formulários validados e acessíveis. Você termina o curso com uma página institucional completa, escrita à mão e verificada em validadores e leitores de tela.",
+   "aprendera": [
+    "Explicar o que acontece entre digitar um endereço e ver uma página.",
+    "Escrever documentos HTML válidos, com a estrutura e os metadados corretos.",
+    "Escolher elementos semânticos em vez de blocos genéricos.",
+    "Criar formulários com rótulos, validação nativa e acessibilidade.",
+    "Publicar tabelas, imagens, áudio e vídeo de forma acessível e otimizada para busca."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Introdução ao HTML",
+     "topicos": [
+      "Funcionamento da Web",
+      "O que é HTML",
+      "Estrutura de um documento",
+      "Elementos e atributos",
+      "Ferramentas de desenvolvimento"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Estrutura e semântica",
+     "topicos": [
+      "Títulos e parágrafos",
+      "Listas",
+      "Links",
+      "Imagens",
+      "Elementos semânticos",
+      "Organização de documentos"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Formulários",
+     "topicos": [
+      "Formulários HTML",
+      "Inputs",
+      "Labels",
+      "Tipos de campos",
+      "Validação nativa",
+      "Acessibilidade de formulários"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "HTML avançado",
+     "topicos": [
+      "Tabelas",
+      "Elementos multimídia",
+      "Metadados",
+      "SEO básico",
+      "Acessibilidade",
+      "Boas práticas"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "css",
+   "nome": "CSS3",
+   "categoria": "Desenvolvimento Web",
+   "nivel": "Iniciante",
+   "horas": 40,
+   "preco": 119.9,
+   "resumo": "Estilo, layout e responsividade: da cascata ao Flexbox e ao Grid.",
+   "descricao": "Aprenda a linguagem de estilos da Web pelos fundamentos (cascata, especificidade, herança), passe por tipografia e box model e domine Flexbox, Grid e design responsivo. O projeto final transforma a página HTML do primeiro curso em um site responsivo.",
+   "aprendera": [
+    "Escrever seletores precisos e prever qual regra vence na cascata.",
+    "Controlar tipografia, cores, bordas, sombras e o box model.",
+    "Montar layouts com Flexbox e CSS Grid.",
+    "Construir páginas responsivas com abordagem mobile first.",
+    "Aplicar transições e animações respeitando a acessibilidade visual."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Fundamentos",
+     "topicos": [
+      "Sintaxe CSS",
+      "Seletores",
+      "Cascata",
+      "Especificidade",
+      "Herança",
+      "Cores",
+      "Unidades"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Estilização",
+     "topicos": [
+      "Tipografia",
+      "Backgrounds",
+      "Bordas",
+      "Sombras",
+      "Box Model",
+      "Espaçamento",
+      "Posicionamento"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Layouts",
+     "topicos": [
+      "Display",
+      "Flexbox",
+      "CSS Grid",
+      "Alinhamento",
+      "Distribuição",
+      "Organização de componentes"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "Responsividade",
+     "topicos": [
+      "Media queries",
+      "Mobile First",
+      "Unidades relativas",
+      "Layouts adaptativos",
+      "Acessibilidade visual",
+      "Transições e animações"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "javascript",
+   "nome": "JavaScript",
+   "categoria": "Desenvolvimento Web",
+   "nivel": "Intermediário",
+   "horas": 60,
+   "preco": 179.9,
+   "resumo": "Lógica de programação e interatividade: da sintaxe ao consumo de APIs.",
+   "descricao": "Fundamentos da linguagem, funções, estruturas de dados, manipulação do DOM e JavaScript moderno (ES6+, Promises, async/await e Fetch). No projeto final você adiciona interatividade, validação e consumo de API ao site construído nos cursos anteriores.",
+   "aprendera": [
+    "Declarar variáveis, usar tipos de dados, operadores, condicionais e laços.",
+    "Escrever funções, entender escopo e trabalhar com arrays e objetos.",
+    "Selecionar elementos, tratar eventos e atualizar a interface pelo DOM.",
+    "Validar formulários e guardar dados no navegador.",
+    "Consumir APIs com fetch, Promises e async/await, tratando erros."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Fundamentos",
+     "topicos": [
+      "Introdução ao JavaScript",
+      "Variáveis",
+      "Tipos de dados",
+      "Operadores",
+      "Condicionais",
+      "Laços"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Estruturas e funções",
+     "topicos": [
+      "Funções",
+      "Escopo",
+      "Arrays",
+      "Objetos",
+      "Métodos",
+      "Manipulação de dados"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "JavaScript no navegador",
+     "topicos": [
+      "DOM",
+      "Seleção de elementos",
+      "Eventos",
+      "Formulários",
+      "Validação",
+      "Atualização de interfaces"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "JavaScript moderno",
+     "topicos": [
+      "ES6+",
+      "Desestruturação",
+      "Módulos",
+      "Promises",
+      "Async/Await",
+      "Fetch API",
+      "Tratamento de erros",
+      "Armazenamento local"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "java",
+   "nome": "Java",
+   "categoria": "Desenvolvimento de Software",
+   "nivel": "Intermediário",
+   "horas": 80,
+   "preco": 249.9,
+   "resumo": "Orientação a objetos, coleções, testes com JUnit e uma API com Spring Boot.",
+   "descricao": "Do ecossistema JVM à construção de uma API REST com Spring Boot: sintaxe, orientação a objetos, interfaces, coleções, exceções, arquivos e testes automatizados com JUnit. O projeto final é um sistema de gerenciamento com regras de negócio, persistência e testes.",
+   "aprendera": [
+    "Compilar e executar programas Java e explicar o papel de JDK, JRE e JVM.",
+    "Modelar problemas com classes, encapsulamento, herança, interfaces e polimorfismo.",
+    "Usar coleções, generics e exceções de forma segura.",
+    "Ler e gravar arquivos com a API java.nio.",
+    "Escrever testes com JUnit 5 e expor uma API REST com Spring Boot."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Java e o ecossistema JVM",
+     "topicos": [
+      "História e filosofia",
+      "JDK, JRE e JVM",
+      "Bytecode",
+      "Versões LTS"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Ambiente e primeiros programas",
+     "topicos": [
+      "Instalação do JDK",
+      "javac e java",
+      "Estrutura de uma classe",
+      "Saída e entrada com Scanner"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Variáveis, tipos e operadores",
+     "topicos": [
+      "Tipos primitivos",
+      "String",
+      "Conversões",
+      "Operadores",
+      "var"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "Condicionais e repetição",
+     "topicos": [
+      "if/else",
+      "switch moderno",
+      "for, while, do-while",
+      "break e continue"
+     ]
+    },
+    {
+     "n": 5,
+     "titulo": "Métodos e organização do código",
+     "topicos": [
+      "Métodos e parâmetros",
+      "Sobrecarga",
+      "Pacotes",
+      "Escopo",
+      "Recursão"
+     ]
+    },
+    {
+     "n": 6,
+     "titulo": "Programação orientada a objetos",
+     "topicos": [
+      "Classes e objetos",
+      "Construtores",
+      "this e static",
+      "Records"
+     ]
+    },
+    {
+     "n": 7,
+     "titulo": "Encapsulamento e herança",
+     "topicos": [
+      "Modificadores de acesso",
+      "Getters e setters",
+      "extends e super",
+      "Sobrescrita",
+      "Composição"
+     ]
+    },
+    {
+     "n": 8,
+     "titulo": "Interfaces, polimorfismo e abstração",
+     "topicos": [
+      "Classes abstratas",
+      "Interfaces",
+      "Polimorfismo",
+      "Sealed e enums"
+     ]
+    },
+    {
+     "n": 9,
+     "titulo": "Coleções, generics e exceções",
+     "topicos": [
+      "List, Set e Map",
+      "Generics",
+      "Streams básicos",
+      "try/catch/finally",
+      "Exceções próprias"
+     ]
+    },
+    {
+     "n": 10,
+     "titulo": "Arquivos e entrada/saída",
+     "topicos": [
+      "Path e Files",
+      "Leitura e escrita de texto",
+      "try-with-resources",
+      "Codificação UTF-8"
+     ]
+    },
+    {
+     "n": 11,
+     "titulo": "Testes automatizados com JUnit",
+     "topicos": [
+      "JUnit 5",
+      "Asserções",
+      "Testes parametrizados",
+      "Maven",
+      "Cobertura de casos"
+     ]
+    },
+    {
+     "n": 12,
+     "titulo": "APIs com Spring Boot",
+     "topicos": [
+      "Spring Boot e starters",
+      "Controllers REST",
+      "Injeção de dependência",
+      "Persistência com JPA",
+      "Teste da API"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "kotlin",
+   "nome": "Kotlin",
+   "categoria": "Desenvolvimento Mobile",
+   "nivel": "Intermediário",
+   "horas": 70,
+   "preco": 219.9,
+   "resumo": "Kotlin do zero ao Android: null safety, coroutines e Jetpack Compose.",
+   "descricao": "Aprenda Kotlin com foco em segurança e concisão: null safety, lambdas, coleções, programação funcional e coroutines. Depois, entre no Android com Jetpack Compose e arquitetura básica. O projeto final é um aplicativo Android com navegação, estado e persistência local.",
+   "aprendera": [
+    "Escrever Kotlin idiomático, usando tipos anuláveis com segurança.",
+    "Aplicar lambdas, funções de ordem superior e coleções funcionais.",
+    "Modelar dados com classes, data classes, interfaces e sealed classes.",
+    "Usar coroutines e Flow para trabalho assíncrono.",
+    "Construir telas com Jetpack Compose e organizar um app com ViewModel e Room."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Introdução ao Kotlin",
+     "topicos": [
+      "Origem da linguagem",
+      "Kotlin e JVM",
+      "Kotlin Playground",
+      "Primeiro programa"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Sintaxe, variáveis e tipos",
+     "topicos": [
+      "val e var",
+      "Tipos básicos",
+      "Inferência de tipos",
+      "String templates",
+      "Intervalos"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Null Safety",
+     "topicos": [
+      "Tipos anuláveis",
+      "Safe call",
+      "Elvis",
+      "Smart cast",
+      "Evitar !!"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "Condicionais e loops",
+     "topicos": [
+      "if como expressão",
+      "when",
+      "for e while",
+      "Intervalos e progressões"
+     ]
+    },
+    {
+     "n": 5,
+     "titulo": "Funções e lambdas",
+     "topicos": [
+      "Parâmetros nomeados e padrão",
+      "Funções de expressão única",
+      "Lambdas",
+      "Ordem superior",
+      "Extensões"
+     ]
+    },
+    {
+     "n": 6,
+     "titulo": "Classes e orientação a objetos",
+     "topicos": [
+      "Classes e construtores",
+      "Data classes",
+      "Herança e interfaces",
+      "object e companion",
+      "Sealed classes"
+     ]
+    },
+    {
+     "n": 7,
+     "titulo": "Collections",
+     "topicos": [
+      "List, Set e Map",
+      "Imutável e mutável",
+      "map, filter, groupBy",
+      "Sequences"
+     ]
+    },
+    {
+     "n": 8,
+     "titulo": "Programação funcional",
+     "topicos": [
+      "Imutabilidade",
+      "Funções puras",
+      "fold e reduce",
+      "Composição",
+      "Result"
+     ]
+    },
+    {
+     "n": 9,
+     "titulo": "Coroutines e programação assíncrona",
+     "topicos": [
+      "suspend",
+      "launch e async",
+      "Dispatchers",
+      "Cancelamento",
+      "Flow"
+     ]
+    },
+    {
+     "n": 10,
+     "titulo": "Introdução ao Android",
+     "topicos": [
+      "Android Studio",
+      "Estrutura do projeto",
+      "Activity e ciclo de vida",
+      "Manifest e recursos"
+     ]
+    },
+    {
+     "n": 11,
+     "titulo": "Interfaces com Jetpack Compose",
+     "topicos": [
+      "Composables",
+      "State e recomposição",
+      "Layouts e Material 3",
+      "Listas",
+      "Navegação"
+     ]
+    },
+    {
+     "n": 12,
+     "titulo": "Arquitetura básica de aplicativos Android",
+     "topicos": [
+      "ViewModel",
+      "UI state",
+      "Repositório",
+      "Room",
+      "Separação em camadas"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "julia",
+   "nome": "Julia",
+   "categoria": "Computação Científica",
+   "nivel": "Intermediário",
+   "horas": 70,
+   "preco": 219.9,
+   "resumo": "Computação científica: álgebra linear, estatística, métodos numéricos e desempenho.",
+   "descricao": "Julia une a clareza de uma linguagem de alto nível ao desempenho de uma linguagem compilada. Você aprende a linguagem, o múltiplo despacho, arrays e álgebra linear e aplica tudo em estatística, visualização, métodos numéricos, otimização e simulações. O projeto final é uma análise ou simulação numérica com interpretação dos resultados.",
+   "aprendera": [
+    "Escrever funções com múltiplo despacho e tipos paramétricos.",
+    "Manipular arrays e matrizes e resolver sistemas lineares.",
+    "Analisar dados com estatística descritiva e visualizar resultados.",
+    "Implementar métodos numéricos (raízes, integração, EDOs) e avaliar o erro.",
+    "Medir e melhorar o desempenho de simulações."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Introdução à linguagem Julia",
+     "topicos": [
+      "Para que serve",
+      "Compilação JIT",
+      "REPL",
+      "Ecossistema"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Instalação e ambiente",
+     "topicos": [
+      "juliaup",
+      "REPL e modos",
+      "Pkg e ambientes",
+      "Project.toml",
+      "VS Code"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Variáveis, tipos e operadores",
+     "topicos": [
+      "Tipos numéricos",
+      "Strings",
+      "Operadores",
+      "Broadcasting com ponto",
+      "Hierarquia de tipos"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "Estruturas de controle",
+     "topicos": [
+      "if e operador ternário",
+      "for e while",
+      "Compreensões",
+      "Escopo"
+     ]
+    },
+    {
+     "n": 5,
+     "titulo": "Funções e múltiplo despacho",
+     "topicos": [
+      "Definição de funções",
+      "Argumentos nomeados",
+      "Métodos e despacho",
+      "Structs",
+      "Estabilidade de tipo"
+     ]
+    },
+    {
+     "n": 6,
+     "titulo": "Arrays, matrizes e estruturas de dados",
+     "topicos": [
+      "Vetores e matrizes",
+      "Indexação",
+      "Dict, Set, Tuple",
+      "Views e cópias"
+     ]
+    },
+    {
+     "n": 7,
+     "titulo": "Álgebra linear",
+     "topicos": [
+      "LinearAlgebra",
+      "Sistemas lineares",
+      "Autovalores",
+      "Fatorações",
+      "Condicionamento"
+     ]
+    },
+    {
+     "n": 8,
+     "titulo": "Estatística e análise de dados",
+     "topicos": [
+      "Statistics",
+      "DataFrames",
+      "Regressão linear",
+      "Tratamento de ausentes"
+     ]
+    },
+    {
+     "n": 9,
+     "titulo": "Visualização de dados",
+     "topicos": [
+      "Plots.jl",
+      "Gráficos de linha e dispersão",
+      "Histogramas",
+      "Legendas e eixos",
+      "Salvar figuras"
+     ]
+    },
+    {
+     "n": 10,
+     "titulo": "Métodos numéricos",
+     "topicos": [
+      "Bisseção e Newton",
+      "Integração numérica",
+      "Euler e Runge-Kutta",
+      "Erro e convergência"
+     ]
+    },
+    {
+     "n": 11,
+     "titulo": "Otimização matemática",
+     "topicos": [
+      "Gradiente descendente",
+      "Mínimos quadrados",
+      "Optim.jl",
+      "Restrições com JuMP"
+     ]
+    },
+    {
+     "n": 12,
+     "titulo": "Simulações computacionais e desempenho",
+     "topicos": [
+      "Monte Carlo",
+      "Números aleatórios",
+      "BenchmarkTools",
+      "Perfil de desempenho",
+      "Paralelismo"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "python",
+   "nome": "Python",
+   "categoria": "Programação Geral",
+   "nivel": "Iniciante",
+   "horas": 70,
+   "preco": 199.9,
+   "resumo": "Do básico à automação, análise de dados e APIs com FastAPI.",
+   "descricao": "Python do zero ao projeto: sintaxe, estruturas de dados, funções, exceções, orientação a objetos, arquivos, ambientes virtuais, automação, análise de dados com pandas e uma API com FastAPI testada com pytest. O projeto final resolve um problema real com processamento de dados, API ou automação.",
+   "aprendera": [
+    "Escrever programas Python claros, seguindo a PEP 8.",
+    "Usar listas, tuplas, conjuntos e dicionários para modelar dados.",
+    "Tratar erros, ler e gravar arquivos e organizar código em módulos e classes.",
+    "Isolar dependências com venv e automatizar tarefas do dia a dia.",
+    "Analisar dados com pandas e publicar uma API com FastAPI e testes."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Introdução ao Python",
+     "topicos": [
+      "Para que serve",
+      "Interpretador e REPL",
+      "Executar scripts",
+      "Zen do Python"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Sintaxe, variáveis e tipos",
+     "topicos": [
+      "Variáveis",
+      "int, float, str, bool",
+      "f-strings",
+      "input e print",
+      "Conversões"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Condicionais e loops",
+     "topicos": [
+      "if/elif/else",
+      "Operadores lógicos",
+      "for e while",
+      "range",
+      "break, continue e else"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "Funções e módulos",
+     "topicos": [
+      "def e return",
+      "Argumentos",
+      "Escopo",
+      "import",
+      "Módulo principal"
+     ]
+    },
+    {
+     "n": 5,
+     "titulo": "Listas, tuplas, conjuntos e dicionários",
+     "topicos": [
+      "Listas",
+      "Tuplas",
+      "Conjuntos",
+      "Dicionários",
+      "Compreensões"
+     ]
+    },
+    {
+     "n": 6,
+     "titulo": "Tratamento de exceções",
+     "topicos": [
+      "try/except",
+      "else e finally",
+      "raise",
+      "Exceções próprias"
+     ]
+    },
+    {
+     "n": 7,
+     "titulo": "Orientação a objetos",
+     "topicos": [
+      "Classes",
+      "__init__ e self",
+      "Herança",
+      "Métodos especiais",
+      "dataclasses"
+     ]
+    },
+    {
+     "n": 8,
+     "titulo": "Manipulação de arquivos",
+     "topicos": [
+      "open e with",
+      "pathlib",
+      "CSV",
+      "JSON",
+      "Codificação"
+     ]
+    },
+    {
+     "n": 9,
+     "titulo": "Ambientes virtuais e dependências",
+     "topicos": [
+      "venv",
+      "pip",
+      "requirements.txt",
+      "pyproject.toml"
+     ]
+    },
+    {
+     "n": 10,
+     "titulo": "Automação de tarefas",
+     "topicos": [
+      "Organizar arquivos",
+      "argparse",
+      "subprocess",
+      "Agendamento",
+      "Logging"
+     ]
+    },
+    {
+     "n": 11,
+     "titulo": "Introdução à análise de dados",
+     "topicos": [
+      "pandas",
+      "DataFrame",
+      "Filtros e agrupamentos",
+      "Dados ausentes",
+      "Gráficos simples"
+     ]
+    },
+    {
+     "n": 12,
+     "titulo": "APIs com FastAPI e testes automatizados",
+     "topicos": [
+      "FastAPI",
+      "Rotas e Pydantic",
+      "Documentação automática",
+      "pytest",
+      "TestClient"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "nodejs",
+   "nome": "Node.js",
+   "categoria": "Desenvolvimento Back-End",
+   "nivel": "Intermediário",
+   "horas": 70,
+   "preco": 219.9,
+   "resumo": "APIs REST com Fastify, PostgreSQL, autenticação, segurança e testes.",
+   "descricao": "Do runtime e dos módulos à API de produção: programação assíncrona, arquivos, HTTP, Fastify, validação, PostgreSQL, autenticação, segurança, testes, logs e deploy. O projeto final é uma API REST com autenticação, banco de dados e testes.",
+   "aprendera": [
+    "Explicar o event loop e escrever código assíncrono com async/await.",
+    "Organizar projetos com módulos ES e gerenciar dependências com npm.",
+    "Construir APIs REST com Fastify e validar entradas.",
+    "Persistir dados em PostgreSQL com consultas parametrizadas.",
+    "Aplicar autenticação, autorização, testes, logs e deploy básico."
+   ],
+   "modulos": [
+    {
+     "n": 1,
+     "titulo": "Introdução ao Node.js e ao runtime",
+     "topicos": [
+      "V8 e libuv",
+      "Event loop",
+      "REPL e scripts",
+      "Versões LTS"
+     ]
+    },
+    {
+     "n": 2,
+     "titulo": "Módulos e dependências",
+     "topicos": [
+      "ES Modules",
+      "CommonJS",
+      "npm e package.json",
+      "Versionamento semântico",
+      "node:"
+     ]
+    },
+    {
+     "n": 3,
+     "titulo": "Programação assíncrona",
+     "topicos": [
+      "Callbacks",
+      "Event loop em prática",
+      "Timers",
+      "EventEmitter",
+      "Erros assíncronos"
+     ]
+    },
+    {
+     "n": 4,
+     "titulo": "Promises e async/await",
+     "topicos": [
+      "Promise",
+      "async/await",
+      "Promise.all e allSettled",
+      "Tratamento de erros",
+      "Cancelamento"
+     ]
+    },
+    {
+     "n": 5,
+     "titulo": "Manipulação de arquivos",
+     "topicos": [
+      "fs/promises",
+      "path",
+      "Streams",
+      "JSON",
+      "Permissões"
+     ]
+    },
+    {
+     "n": 6,
+     "titulo": "HTTP e APIs REST",
+     "topicos": [
+      "Métodos e status",
+      "node:http",
+      "Recursos e rotas",
+      "Idempotência",
+      "Cabeçalhos"
+     ]
+    },
+    {
+     "n": 7,
+     "titulo": "Fastify e organização de rotas",
+     "topicos": [
+      "Instância e plugins",
+      "Rotas",
+      "Hooks",
+      "Tratamento de erros",
+      "Estrutura de pastas"
+     ]
+    },
+    {
+     "n": 8,
+     "titulo": "Validação de dados",
+     "topicos": [
+      "JSON Schema",
+      "Validação com zod",
+      "Sanitização",
+      "Mensagens de erro"
+     ]
+    },
+    {
+     "n": 9,
+     "titulo": "PostgreSQL e persistência",
+     "topicos": [
+      "Pool de conexões",
+      "Consultas parametrizadas",
+      "Transações",
+      "Migrações",
+      "Repositórios"
+     ]
+    },
+    {
+     "n": 10,
+     "titulo": "Autenticação e autorização",
+     "topicos": [
+      "Hash de senha",
+      "Sessões e cookies",
+      "JWT: prós e contras",
+      "Papéis e permissões"
+     ]
+    },
+    {
+     "n": 11,
+     "titulo": "Segurança de APIs",
+     "topicos": [
+      "Injeção SQL",
+      "Rate limiting",
+      "Cabeçalhos de segurança",
+      "CORS e CSRF",
+      "Segredos e variáveis de ambiente"
+     ]
+    },
+    {
+     "n": 12,
+     "titulo": "Testes, logs e deploy",
+     "topicos": [
+      "node:test",
+      "Testes de integração",
+      "Logs estruturados",
+      "Variáveis por ambiente",
+      "Deploy com systemd"
+     ]
+    }
+   ]
+  }
+ ],
+ "pacotes": [
+  {
+   "slug": "frontend",
+   "nome": "Formação Front-End — Fundamentos",
+   "nivel": "Iniciante",
+   "categoria": "Desenvolvimento Web",
+   "resumo": "HTML5, CSS3 e JavaScript em sequência, com um único projeto que cresce ao longo da formação.",
+   "descricao": "Trilha de três cursos que se encaixam: a página escrita em HTML ganha identidade e responsividade com CSS e, por fim, comportamento real com JavaScript. A formação termina com um projeto integrador que reúne tudo.",
+   "cursos": [
+    "html",
+    "css",
+    "javascript"
+   ],
+   "preco": 299.9
+  }
+ ]
+}

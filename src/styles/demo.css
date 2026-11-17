@@ -1,0 +1,8 @@
+/* Complementos exclusivos da demonstração (o restante do visual vem do sistema original). */
+.cert-exemplo { text-align: left; }
+.cert-exemplo h2 { font-size: 1.6rem; }
+.cert-ajuda { display: flex; flex-direction: column; gap: 12px; }
+.demo-faixa { padding: 12px 18px; border-radius: 16px; background: var(--surface); box-shadow: var(--inset); color: var(--ink-2); font-size: .88rem; }
+.pill.demo { white-space: nowrap; }
+.topbar .actions .pill { display: inline-flex; align-items: center; }
+@media (max-width: 520px) { .topbar .actions .pill, .pub-head .actions .pill { display: none; } }

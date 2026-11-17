@@ -1,0 +1,95 @@
+/* AUDMANI Control — complementos do mesmo sistema visual (Soft UI) usado na plataforma. */
+.kpis { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 18px; }
+.kpi { padding: 20px; border-radius: 20px; background: var(--surface); box-shadow: var(--raised); display: flex; flex-direction: column; gap: 4px; }
+.kpi b { font-size: 1.9rem; letter-spacing: -.02em; }
+.kpi span { color: var(--ink-2); font-size: .82rem; }
+.kpi.alerta b { color: var(--accent); }
+.scroll { overflow-x: auto; }
+.acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+.perigo { background: var(--ink); color: var(--bg); }
+.faixa-lab { padding: 14px 18px; border-radius: 16px; background: var(--ink); color: var(--bg); font-weight: 600; letter-spacing: .02em; }
+.indisp { color: var(--ink-2); font-style: italic; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .82rem; }
+.ok-txt { font-weight: 600; } .ruim-txt { font-weight: 700; text-decoration: underline; }
+dialog { border: 0; border-radius: 24px; background: var(--bg); color: var(--ink); box-shadow: var(--raised); max-width: min(680px, 94vw); width: 100%; padding: 28px; }
+dialog::backdrop { background: rgba(0,0,0,.45); }
+dialog h2 { margin-top: 0; }
+dialog textarea { width: 100%; min-height: 320px; padding: 14px; border: 0; border-radius: 14px; background: var(--surface); box-shadow: var(--inset); font: .82rem ui-monospace, Menlo, monospace; color: var(--ink); resize: vertical; }
+pre.json { max-height: 380px; overflow: auto; padding: 14px; border-radius: 14px; background: var(--surface); box-shadow: var(--inset); font-size: .78rem; white-space: pre-wrap; word-break: break-word; }
+.paginacao { display: flex; gap: 10px; align-items: center; justify-content: flex-end; margin-top: 14px; color: var(--ink-2); font-size: .85rem; }
+
+/* ==========================================================
+   SISTEMA COMPARTILHADO DO CONTROL — formulários, botões, seletores, tabelas, sidebar
+   Todos os controles de uma linha usam a mesma altura (--ctl-h); o botão se alinha pela BASE
+   da área dos controles (flex-end), nunca pelo rótulo.
+   ========================================================== */
+:root { --ctl-h: 46px; --ctl-h-sm: 34px; }
+.card { min-width: 0; }
+
+/* ---------- Formulários ---------- */
+.toolbar { display: flex; gap: 12px 16px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 16px; }
+.toolbar .field { margin: 0; flex: 1 1 190px; min-width: 0; max-width: 320px; }
+.toolbar .field.largo { flex-basis: 260px; max-width: 420px; }
+.toolbar > .btn { align-self: flex-end; flex: none; }
+.field input, .field select, .field .sel-btn { height: var(--ctl-h); }
+.field input[type="date"], .field input[type="number"], .field input[type="email"], .field input[type="text"], .field input:not([type]) { padding-top: 0; padding-bottom: 0; }
+.field textarea { padding: 13px 16px; }
+.field select:not(.sel-nativo) { padding: 0 14px; border: 0; border-radius: 14px; background: var(--surface); box-shadow: var(--inset); font: inherit; color: var(--ink); outline: 0; }
+.toolbar > input { height: var(--ctl-h); padding: 0 16px; border: 0; border-radius: 14px; background: var(--surface); box-shadow: var(--inset); font: inherit; color: var(--ink); outline: 0; }
+.field input:focus-visible, .toolbar > input:focus-visible { outline: 2px solid var(--ink); }
+
+/* ---------- Botões ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: var(--ctl-h, 44px); padding: 0 22px; border: 0; font: inherit; font-weight: 600; line-height: 1.1; white-space: nowrap; cursor: pointer; }
+.btn:focus-visible, .sel-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.btn:disabled, .btn[aria-disabled="true"] { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+.btn.carregando { position: relative; color: transparent; pointer-events: none; }
+.btn.carregando::after { content: ""; position: absolute; width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--ink-2); border-top-color: transparent; animation: ctl-gira .7s linear infinite; }
+@keyframes ctl-gira { to { transform: rotate(360deg); } }
+.btn-sm { min-height: var(--ctl-h-sm); padding: 0 14px; font-size: .78rem; }
+.btn.perigo { background: var(--ink); color: var(--bg); }
+
+/* ---------- Seletor AUDMANI (o <select> real continua no DOM para valor e evento "change") ---------- */
+.sel { position: relative; display: block; min-width: 0; }
+td .sel { min-width: 150px; }
+.sel-nativo { position: absolute; inset: 0 auto auto 0; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.sel-btn { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 14px; border: 0; border-radius: 14px; background: var(--surface); box-shadow: var(--inset); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.sel-btn[aria-expanded="true"] { box-shadow: var(--inset), 0 0 0 2px var(--ink-2); }
+.sel-btn:disabled { opacity: .5; cursor: not-allowed; }
+.sel-txt { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sel-seta { width: 16px; height: 16px; flex: none; stroke: var(--ink-2); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .2s; }
+.sel-btn[aria-expanded="true"] .sel-seta { transform: rotate(180deg); }
+td .sel-btn { height: var(--ctl-h-sm); font-size: .85rem; }
+.sel-lista { position: fixed; z-index: 1000; margin: 0; padding: 6px; list-style: none; max-height: 280px; overflow-y: auto; border-radius: 16px; background: var(--surface); box-shadow: var(--raised); border: 1px solid var(--line); }
+.sel-lista[hidden] { display: none; }
+.sel-op { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: 11px; color: var(--ink-2); cursor: pointer; font-size: .92rem; }
+.sel-op[data-ativo="true"] { background: var(--bg); color: var(--ink); }
+.sel-op[aria-selected="true"] { color: var(--ink); font-weight: 600; }
+.sel-op[aria-selected="true"]::after { content: ""; width: 6px; height: 10px; border: solid var(--ink); border-width: 0 2px 2px 0; transform: rotate(45deg) translateY(-2px); flex: none; }
+.sel-op[aria-disabled="true"] { opacity: .45; cursor: not-allowed; }
+
+/* ---------- Tabelas ---------- */
+.scroll { overflow-x: auto; max-width: 100%; }
+.table { min-width: 640px; }
+.table th { white-space: nowrap; vertical-align: bottom; }
+.table td { vertical-align: middle; overflow-wrap: break-word; }
+.table td .pill, .table td .btn { white-space: nowrap; }
+.table .cel-texto { min-width: 260px; max-width: 62ch; line-height: 1.5; white-space: normal; }
+.acoes { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.vazio { padding: 22px 8px; text-align: center; color: var(--ink-2); }
+.paginacao .btn { min-width: 92px; }
+
+/* ---------- Cards ---------- */
+.card h2 { min-height: 1.4em; gap: 12px; }
+.card > .muted:first-of-type { margin-top: -6px; }
+.card > .toolbar:last-child { margin-bottom: 0; }
+
+/* ---------- Sidebar do Control em celulares: navegação em linha, rolável ---------- */
+@media (max-width: 820px) {
+  #nav { overflow-x: auto; justify-content: flex-start; flex-wrap: nowrap; scrollbar-width: none; }
+  #nav::-webkit-scrollbar { display: none; }
+  #nav button { flex: 0 0 auto; min-width: 84px; font-size: .64rem; }
+  #nav .nav-long { display: inline; white-space: nowrap; }
+  .toolbar .field { flex-basis: 100%; max-width: none; }
+  .toolbar > .btn { width: 100%; }
+}
+a.btn { display: inline-flex; }
